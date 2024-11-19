@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(#e2e2e2, #c9d6ff);
+}
+.container{
+    border-radius: 40px;
+    height: 80vh;
+    width: 60%;
+    background-color: #fff;
+    box-shadow: 0 0 10px #e1e1e1;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.svg-container{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    height: 10vh;
+}
+svg{
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.h1{
+    width: 100%;
+    text-align: center;
+}
+h1{
+    font-weight:700;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+p{
+    text-align: center;
+    width: 100%;
+    padding: 0 0 10px 0;
+}
+input{
+    font-size: 14px;
+    outline: none;
+    border: none;
+    height: 5.5vh;
+    width: 320px;
+    margin-bottom: 5px;
+    background-color: #e1e1e1;
+    border-radius: 10px;
+    text-align: center;
+}
+button{
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+    background-color: #512da8;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    padding: 20px 0;
+}
+.page1{
+    height: 100%;
+    width: 50%;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+    opacity: 1;
+}
+.p1{
+    animation: righty 0.8s forwards;
+}
+@keyframes righty {
+    0%{
+        left: 0;
+        opacity: 1;
+    }
+    100%{
+        left: 10%;
+        opacity: 0;
+    }
+}
+.page2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    z-index: 20;
+    position: absolute;
+    right: 0;
+}
+.p2{
+    animation: rightyy 0.8s forwards;
+}
+@keyframes rightyy {
+    0%{
+        right: 0;
+    }
+    100%{
+        right: -500px;
+    }
+}
+.pp2{
+    animation: haha 0.8s forwards;
+}
+@keyframes haha {
+    0%{
+        opacity: 0;
+        right: -500px;
+    }
+    100%{
+        opacity: 1;
+        right: 0px;
+    }
+}
+.page3{
+    height: 100%;
+    width: 50%;
+    z-index: 20;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -500px;
+}
+.p3{
+    animation: left 0.8s forwards;
+}
+@keyframes left {
+    0%{
+        left: -500px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+.page4{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+}
+.p4{
+    animation: animee 0.8s forwards;
+}
+@keyframes animee {
+    0%{
+        left: 0;
+        opacity: 0;
+    }
+    100%{
+        left: 50%;
+        opacity: 1;
+    }
+}
+.pp4{
+    animation: aniimee 0.8s forwards;
+}
+@keyframes aniimee {
+    0%{
+        left: 50%;
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+    100%{
+        left: -50%;
+        opacity: 0;
+    }
+}
+.hello{
+    padding-bottom: 30px;
+}
+.p{
+    font-size: 20px;
+}
+.input{
+    width: 400px;
+}
+.up{
+    margin-top: 10px;
+}
+.toggle{
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(#5c6bc0, #512da8);
+    position: absolute;
+    right: 0;
+    border-radius: 100px 0 0 100px;
+    z-index: 15;
+}
+
+.tgl{
+    animation: anime 0.8s forwards;
+}
+@keyframes anime {
+    0%{
+        right: 0;
+        border-radius: 100px 0 0 100px;
+    }
+    100%{
+        right: 50%;
+        border-radius: 0 100px 100px 0;
+    }
+}
+.tgl2{
+    animation: animme 0.8s forwards;
+}
+@keyframes animme {
+    0%{
+        right: 50%;
+        border-radius: 0 100px 100px 0;
+    }
+    100%{
+        right: 0;
+        border-radius: 100px 0 0 100px;
+    }
+}

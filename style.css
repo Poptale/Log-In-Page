@@ -75,6 +75,42 @@ button{
     font-size: 14px;
     cursor: pointer;
     font-weight: 700;
+    position: relative;
+    overflow: hidden;
+}
+button::before{
+    content: "SIGN IN";
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    transition: 0.15s ease-in-out;
+}
+button::after{
+    content: "SIGN IN";
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #3c2c62;
+    left: 0;
+    bottom: -6px;
+    border-radius: inherit;
+    height: 0;
+    transition: 0.15s ease-in-out;
+}
+button:hover::after{
+    height: 100%;
+    bottom: 0;
+}
+button:hover::before{
+    height: 0;
 }
 a{
     text-decoration: none;
